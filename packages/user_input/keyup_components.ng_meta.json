@@ -28,7 +28,7 @@
     "6": "keyup_components.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       }
     ]

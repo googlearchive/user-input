@@ -61,27 +61,27 @@
     "6": "app_component.dart",
     "7": [
       {
-        "1": "package:angular2/core.ngfactory.dart",
+        "1": "package:angular2/core.template.dart",
         "4": "i0"
       },
       {
-        "1": "click_me_component.ngfactory.dart",
+        "1": "click_me_component.template.dart",
         "4": "i1"
       },
       {
-        "1": "click_me2_component.ngfactory.dart",
+        "1": "click_me2_component.template.dart",
         "4": "i2"
       },
       {
-        "1": "keyup_components.ngfactory.dart",
+        "1": "keyup_components.template.dart",
         "4": "i3"
       },
       {
-        "1": "little_tour_component.ngfactory.dart",
+        "1": "little_tour_component.template.dart",
         "4": "i4"
       },
       {
-        "1": "loop_back_component.ngfactory.dart",
+        "1": "loop_back_component.template.dart",
         "4": "i5"
       }
     ]
