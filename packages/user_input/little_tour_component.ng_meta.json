@@ -45,7 +45,7 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <input #newHero\n        (keyup.enter)=\"addHero(newHero.value)\"\n        (blur)=\"addHero(newHero.value); newHero.value='' \">\n\n      <button (click)=addHero(newHero.value)>Add</button>\n\n      <ul><li *ngFor=\"let hero of heroes\">{{hero}}</li></ul>\n    ",
+        "template": "      <input #newHero\n        (keyup.enter)=\"addHero(newHero.value)\"\n        (blur)=\"addHero(newHero.value); newHero.value='' \">\n\n      <button (click)=\"addHero(newHero.value)\">Add</button>\n\n      <ul><li *ngFor=\"let hero of heroes\">{{hero}}</li></ul>\n    ",
         "templateUrl": "asset:user_input/lib/little_tour_component.dart",
         "styles": [],
         "styleUrls": [],
