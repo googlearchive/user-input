@@ -9,21 +9,26 @@
     ],
     "5": [
       {
-        "1": "ClickMe2Component"
+        "1": "LittleTourComponent",
+        "7": [
+          {
+            "2": "COMMON_DIRECTIVES"
+          }
+        ]
       }
     ],
-    "6": "click_me2_component.dart"
+    "6": "little_tour_component.dart"
   },
   "type": {
-    "ClickMe2Component": {
+    "LittleTourComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "click-me2",
+      "selector": "little-tour",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ClickMe2Component",
-        "moduleUrl": "asset:user_input/lib/click_me2_component.dart",
+        "name": "LittleTourComponent",
+        "moduleUrl": "asset:user_input/lib/src/little_tour_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -39,8 +44,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <button (click)=\"onClickMe2($event)\">No! .. Click me!</button>\n      {{clickMessage}}",
-        "templateUrl": "asset:user_input/lib/click_me2_component.dart",
+        "template": "    <input #newHero\n      (keyup.enter)=\"addHero(newHero.value)\"\n      (blur)=\"addHero(newHero.value); newHero.value='' \">\n\n    <button (click)=\"addHero(newHero.value)\">Add</button>\n\n    <ul><li *ngFor=\"let hero of heroes\">{{hero}}</li></ul>\n  ",
+        "templateUrl": "asset:user_input/lib/src/little_tour_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

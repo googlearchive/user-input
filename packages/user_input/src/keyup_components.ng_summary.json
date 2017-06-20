@@ -25,13 +25,7 @@
         "1": "KeyUpComponentV4"
       }
     ],
-    "6": "keyup_components.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      }
-    ]
+    "6": "keyup_components.dart"
   },
   "type": {
     "KeyUpComponentV1": {
@@ -42,7 +36,7 @@
       "type": {
         "class": "Type",
         "name": "KeyUpComponentV1",
-        "moduleUrl": "asset:user_input/lib/keyup_components.dart",
+        "moduleUrl": "asset:user_input/lib/src/keyup_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -58,8 +52,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <input (keyup)=\"onKey($event)\">\n      <p>{{values}}</p>\n    ",
-        "templateUrl": "asset:user_input/lib/keyup_components.dart",
+        "template": "    <input (keyup)=\"onKey($event)\">\n    <p>{{values}}</p>\n  ",
+        "templateUrl": "asset:user_input/lib/src/keyup_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -77,7 +71,7 @@
       "type": {
         "class": "Type",
         "name": "KeyUpComponentV2",
-        "moduleUrl": "asset:user_input/lib/keyup_components.dart",
+        "moduleUrl": "asset:user_input/lib/src/keyup_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -93,8 +87,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <input #box (keyup)=\"onKey(box.value)\">\n      <p>{{values}}</p>\n    ",
-        "templateUrl": "asset:user_input/lib/keyup_components.dart",
+        "template": "    <input #box (keyup)=\"onKey(box.value)\">\n    <p>{{values}}</p>\n  ",
+        "templateUrl": "asset:user_input/lib/src/keyup_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -112,7 +106,7 @@
       "type": {
         "class": "Type",
         "name": "KeyUpComponentV3",
-        "moduleUrl": "asset:user_input/lib/keyup_components.dart",
+        "moduleUrl": "asset:user_input/lib/src/keyup_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -128,8 +122,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <input #box (keyup.enter)=\"values=box.value\">\n      <p>{{values}}</p>\n    ",
-        "templateUrl": "asset:user_input/lib/keyup_components.dart",
+        "template": "    <input #box (keyup.enter)=\"values=box.value\">\n    <p>{{values}}</p>\n  ",
+        "templateUrl": "asset:user_input/lib/src/keyup_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []
@@ -147,7 +141,7 @@
       "type": {
         "class": "Type",
         "name": "KeyUpComponentV4",
-        "moduleUrl": "asset:user_input/lib/keyup_components.dart",
+        "moduleUrl": "asset:user_input/lib/src/keyup_components.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -163,8 +157,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <input #box\n        (keyup.enter)=\"values=box.value\"\n        (blur)=\"values=box.value\">\n      <p>{{values}}</p>\n    ",
-        "templateUrl": "asset:user_input/lib/keyup_components.dart",
+        "template": "    <input #box\n      (keyup.enter)=\"values=box.value\"\n      (blur)=\"values=box.value\">\n    <p>{{values}}</p>\n  ",
+        "templateUrl": "asset:user_input/lib/src/keyup_components.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

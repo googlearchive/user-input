@@ -12,7 +12,13 @@
         "1": "LoopBackComponent"
       }
     ],
-    "6": "loop_back_component.dart"
+    "6": "loop_back_component.dart",
+    "7": [
+      {
+        "1": "package:angular2/angular2.template.dart",
+        "4": "i0"
+      }
+    ]
   },
   "type": {
     "LoopBackComponent": {
@@ -23,7 +29,7 @@
       "type": {
         "class": "Type",
         "name": "LoopBackComponent",
-        "moduleUrl": "asset:user_input/lib/loop_back_component.dart",
+        "moduleUrl": "asset:user_input/lib/src/loop_back_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -39,8 +45,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <input #box (keyup)=\"0\">\n      <p>{{box.value}}</p>\n    ",
-        "templateUrl": "asset:user_input/lib/loop_back_component.dart",
+        "template": "    <input #box (keyup)=\"0\">\n    <p>{{box.value}}</p>\n  ",
+        "templateUrl": "asset:user_input/lib/src/loop_back_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

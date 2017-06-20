@@ -9,10 +9,10 @@
     ],
     "5": [
       {
-        "1": "ClickMeComponent"
+        "1": "ClickMe2Component"
       }
     ],
-    "6": "click_me_component.dart",
+    "6": "click_me2_component.dart",
     "7": [
       {
         "1": "package:angular2/angular2.template.dart",
@@ -21,15 +21,15 @@
     ]
   },
   "type": {
-    "ClickMeComponent": {
+    "ClickMe2Component": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "click-me",
+      "selector": "click-me2",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "ClickMeComponent",
-        "moduleUrl": "asset:user_input/lib/click_me_component.dart",
+        "name": "ClickMe2Component",
+        "moduleUrl": "asset:user_input/lib/src/click_me2_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -45,8 +45,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "      <button (click)=\"onClickMe()\">Click me!</button>\n      {{clickMessage}}",
-        "templateUrl": "asset:user_input/lib/click_me_component.dart",
+        "template": "    <button (click)=\"onClickMe2($event)\">No! .. Click me!</button>\n    {{clickMessage}}\n  ",
+        "templateUrl": "asset:user_input/lib/src/click_me2_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

@@ -9,32 +9,21 @@
     ],
     "5": [
       {
-        "1": "LittleTourComponent",
-        "7": [
-          {
-            "2": "COMMON_DIRECTIVES"
-          }
-        ]
+        "1": "LoopBackComponent"
       }
     ],
-    "6": "little_tour_component.dart",
-    "7": [
-      {
-        "1": "package:angular2/angular2.template.dart",
-        "4": "i0"
-      }
-    ]
+    "6": "loop_back_component.dart"
   },
   "type": {
-    "LittleTourComponent": {
+    "LoopBackComponent": {
       "class": "Directive",
       "isComponent": true,
-      "selector": "little-tour",
+      "selector": "loop-back",
       "exportAs": null,
       "type": {
         "class": "Type",
-        "name": "LittleTourComponent",
-        "moduleUrl": "asset:user_input/lib/little_tour_component.dart",
+        "name": "LoopBackComponent",
+        "moduleUrl": "asset:user_input/lib/src/loop_back_component.dart",
         "prefix": null,
         "isHost": false,
         "value": null,
@@ -50,8 +39,8 @@
       "lifecycleHooks": [],
       "template": {
         "encapsulation": 2,
-        "template": "    <input #newHero\n      (keyup.enter)=\"addHero(newHero.value)\"\n      (blur)=\"addHero(newHero.value); newHero.value='' \">\n\n    <button (click)=\"addHero(newHero.value)\">Add</button>\n\n    <ul><li *ngFor=\"let hero of heroes\">{{hero}}</li></ul>\n  ",
-        "templateUrl": "asset:user_input/lib/little_tour_component.dart",
+        "template": "    <input #box (keyup)=\"0\">\n    <p>{{box.value}}</p>\n  ",
+        "templateUrl": "asset:user_input/lib/src/loop_back_component.dart",
         "styles": [],
         "styleUrls": [],
         "ngContentSelectors": []

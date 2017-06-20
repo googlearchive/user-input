@@ -9046,7 +9046,7 @@ rx:{"^":"A;fx,fy,go,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 q:function(){var z,y,x
 z=this.aC(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 x=S.I(y,"button",z)
 this.fx=x
 x.appendChild(y.createTextNode("No! .. Click me!"))
@@ -9058,7 +9058,7 @@ this.W(C.a,C.a)
 return},
 M:function(){var z,y
 z=this.db.gcS()
-y="\n      "+z
+y="\n    "+z+"\n  "
 z=this.go
 if(z!==y){this.fy.textContent=y
 this.go=y}},
@@ -9093,7 +9093,8 @@ a9:function(){this.fx.V()},
 $asA:I.F},
 xi:{"^":"c:0;",
 $0:[function(){return new B.cs("",1)},null,null,0,0,null,"call"]}}],["","",,F,{"^":"",ct:{"^":"a;cS:a<",
-kD:[function(){this.a="You are my hero!"},"$0","gjV",0,0,2]}}],["","",,G,{"^":"",
+kD:[function(){this.a="You are my hero!"
+return"You are my hero!"},"$0","gjV",0,0,2]}}],["","",,G,{"^":"",
 Bs:[function(a,b){var z,y
 z=new G.rA(null,null,C.p,P.X(),a,b,null,null,null,C.h,!1,null,H.v([],[{func:1,v:true}]),null,null,C.i,null,null,!1,null)
 z.e=new L.a7(z)
@@ -9109,7 +9110,7 @@ rz:{"^":"A;fx,fy,go,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 q:function(){var z,y,x
 z=this.aC(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 x=S.I(y,"button",z)
 this.fx=x
 x.appendChild(y.createTextNode("Click me!"))
@@ -9121,7 +9122,7 @@ this.W(C.a,C.a)
 return},
 M:function(){var z,y
 z=this.db.gcS()
-y="\n      "+z
+y="\n    "+z+"\n  "
 z=this.go
 if(z!==y){this.fy.textContent=y
 this.go=y}},
@@ -9158,7 +9159,9 @@ xn:{"^":"c:0;",
 $0:[function(){return new F.ct("")},null,null,0,0,null,"call"]}}],["","",,B,{"^":"",cF:{"^":"a;O:a*",
 f5:[function(a){var z=J.fH(a)
 this.a=J.aP(this.a,H.j(J.aC(z))+"  | ")},"$1","gf4",2,0,9]},cG:{"^":"a;O:a*",
-f5:[function(a){this.a=J.aP(this.a,H.j(a)+" | ")},"$1","gf4",2,0,1]},cH:{"^":"a;O:a*"},cI:{"^":"a;O:a*"}}],["","",,Y,{"^":"",
+f5:[function(a){var z=J.aP(this.a,H.j(a)+" | ")
+this.a=z
+return z},"$1","gf4",2,0,1]},cH:{"^":"a;O:a*"},cI:{"^":"a;O:a*"}}],["","",,Y,{"^":"",
 Bt:[function(a,b){var z,y
 z=new Y.rD(null,null,C.p,P.X(),a,b,null,null,null,C.h,!1,null,H.v([],[{func:1,v:true}]),null,null,C.i,null,null,!1,null)
 z.e=new L.a7(z)
@@ -9199,15 +9202,15 @@ rC:{"^":"A;fx,fy,go,id,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 q:function(){var z,y,x,w
 z=this.aC(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 this.fx=S.I(y,"input",z)
-z.appendChild(y.createTextNode("\n      "))
+z.appendChild(y.createTextNode("\n    "))
 x=S.I(y,"p",z)
 this.fy=x
 w=y.createTextNode("")
 this.go=w
 x.appendChild(w)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n  "))
 J.b0(this.fx,"keyup",this.ap(this.db.gf4()),null)
 this.W(C.a,C.a)
 return},
@@ -9249,15 +9252,15 @@ rE:{"^":"A;fx,fy,go,id,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 q:function(){var z,y,x,w
 z=this.aC(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 this.fx=S.I(y,"input",z)
-z.appendChild(y.createTextNode("\n      "))
+z.appendChild(y.createTextNode("\n    "))
 x=S.I(y,"p",z)
 this.fy=x
 w=y.createTextNode("")
 this.go=w
 x.appendChild(w)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n  "))
 J.b0(this.fx,"keyup",this.ap(this.ghD()),null)
 this.W(C.a,C.a)
 return},
@@ -9301,15 +9304,15 @@ rG:{"^":"A;fx,fy,go,id,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 q:function(){var z,y,x,w
 z=this.aC(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 this.fx=S.I(y,"input",z)
-z.appendChild(y.createTextNode("\n      "))
+z.appendChild(y.createTextNode("\n    "))
 x=S.I(y,"p",z)
 this.fy=x
 w=y.createTextNode("")
 this.go=w
 x.appendChild(w)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n  "))
 J.d1($.Y.gbp(),this.fx,"keyup.enter",this.ap(this.gcv()))
 this.W(C.a,C.a)
 return},
@@ -9353,15 +9356,15 @@ rI:{"^":"A;fx,fy,go,id,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 q:function(){var z,y,x,w
 z=this.aC(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 this.fx=S.I(y,"input",z)
-z.appendChild(y.createTextNode("\n      "))
+z.appendChild(y.createTextNode("\n    "))
 x=S.I(y,"p",z)
 this.fy=x
 w=y.createTextNode("")
 this.go=w
 x.appendChild(w)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n  "))
 J.d1($.Y.gbp(),this.fx,"keyup.enter",this.ap(this.gcv()))
 J.b0(this.fx,"blur",this.ap(this.ghB()),null)
 this.W(C.a,C.a)
@@ -9535,15 +9538,15 @@ rN:{"^":"A;fx,fy,go,id,a,b,c,d,e,f,r,x,y,z,Q,ch,cx,cy,db,dx,dy,fr",
 q:function(){var z,y,x,w
 z=this.aC(this.r)
 y=document
-z.appendChild(y.createTextNode("      "))
+z.appendChild(y.createTextNode("    "))
 this.fx=S.I(y,"input",z)
-z.appendChild(y.createTextNode("\n      "))
+z.appendChild(y.createTextNode("\n    "))
 x=S.I(y,"p",z)
 this.fy=x
 w=y.createTextNode("")
 this.go=w
 x.appendChild(w)
-z.appendChild(y.createTextNode("\n    "))
+z.appendChild(y.createTextNode("\n  "))
 J.b0(this.fx,"keyup",this.ap(this.ghP()),null)
 this.W(C.a,C.a)
 return},
