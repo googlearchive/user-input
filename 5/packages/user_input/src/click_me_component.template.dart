@@ -50,7 +50,7 @@ class ViewClickMeComponent0 extends AppView<import1.ClickMeComponent> {
   @override
   void detectChangesInternal() {
     final import1.ClickMeComponent _ctx = ctx;
-    final currVal_0 = import6.interpolate0(_ctx.clickMessage);
+    final currVal_0 = (_ctx.clickMessage ?? '');
     if (!identical(_expr_0, currVal_0)) {
       _text_2.text = currVal_0;
       _expr_0 = currVal_0;
