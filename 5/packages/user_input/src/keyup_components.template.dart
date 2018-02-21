@@ -9,10 +9,8 @@ import 'keyup_components.dart';
 export 'keyup_components.dart';
 import 'dart:html';
 import 'package:angular/angular.dart';
-// Required for initReflector().
 import 'package:angular/src/di/reflector.dart' as _ngRef;
 import 'package:angular/angular.template.dart' as _ref0;
-
 import 'package:angular/src/core/linker/app_view.dart';
 import 'keyup_components.dart' as import1;
 import 'dart:html' as import2;
@@ -459,25 +457,11 @@ void initReflector() {
     return;
   }
   _visited = true;
+
+  _ngRef.registerComponent(KeyUp1Component_untyped, KeyUp1Component_untypedNgFactory);
+  _ngRef.registerComponent(KeyUp1Component, KeyUp1ComponentNgFactory);
+  _ngRef.registerComponent(KeyUp2Component, KeyUp2ComponentNgFactory);
+  _ngRef.registerComponent(KeyUp3Component, KeyUp3ComponentNgFactory);
+  _ngRef.registerComponent(KeyUp4Component, KeyUp4ComponentNgFactory);
   _ref0.initReflector();
-  _ngRef.registerComponent(
-    KeyUp1Component_untyped,
-    KeyUp1Component_untypedNgFactory,
-  );
-  _ngRef.registerComponent(
-    KeyUp1Component,
-    KeyUp1ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    KeyUp2Component,
-    KeyUp2ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    KeyUp3Component,
-    KeyUp3ComponentNgFactory,
-  );
-  _ngRef.registerComponent(
-    KeyUp4Component,
-    KeyUp4ComponentNgFactory,
-  );
 }
