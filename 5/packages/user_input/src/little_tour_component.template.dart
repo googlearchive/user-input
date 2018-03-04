@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -30,7 +28,7 @@ class ViewLittleTourComponent0 extends AppView<import1.LittleTourComponent> {
   import2.ButtonElement _el_1;
   import2.UListElement _el_3;
   ViewContainer _appEl_4;
-  import4.NgFor _NgFor_4_7;
+  import4.NgFor _NgFor_4_9;
   var _expr_0;
   static RenderComponentType _renderType;
   ViewLittleTourComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
@@ -50,8 +48,8 @@ class ViewLittleTourComponent0 extends AppView<import1.LittleTourComponent> {
     var _anchor_4 = ngAnchor.clone(false);
     _el_3.append(_anchor_4);
     _appEl_4 = new ViewContainer(4, 3, this, _anchor_4);
-    TemplateRef _TemplateRef_4_6 = new TemplateRef(_appEl_4, viewFactory_LittleTourComponent1);
-    _NgFor_4_7 = new import4.NgFor(_appEl_4, _TemplateRef_4_6);
+    TemplateRef _TemplateRef_4_8 = new TemplateRef(_appEl_4, viewFactory_LittleTourComponent1);
+    _NgFor_4_9 = new import4.NgFor(_appEl_4, _TemplateRef_4_8);
     import8.appViewUtils.eventManager.addEventListener(_el_0, 'keyup.enter', eventHandler1(_handle_keyup_enter_0_0));
     _el_0.addEventListener('blur', eventHandler1(_handle_blur_0_1));
     _el_1.addEventListener('click', eventHandler1(_handle_click_1_0));
@@ -64,10 +62,10 @@ class ViewLittleTourComponent0 extends AppView<import1.LittleTourComponent> {
     final import1.LittleTourComponent _ctx = ctx;
     final currVal_0 = _ctx.heroes;
     if (!identical(_expr_0, currVal_0)) {
-      _NgFor_4_7.ngForOf = currVal_0;
+      _NgFor_4_9.ngForOf = currVal_0;
       _expr_0 = currVal_0;
     }
-    _NgFor_4_7.ngDoCheck();
+    _NgFor_4_9.ngDoCheck();
     _appEl_4.detectChangesInNestedViews();
   }
 
@@ -133,24 +131,16 @@ const List<dynamic> styles$LittleTourComponentHost = const [];
 
 class _ViewLittleTourComponentHost0 extends AppView<dynamic> {
   ViewLittleTourComponent0 _compView_0;
-  import1.LittleTourComponent _LittleTourComponent_0_4;
+  import1.LittleTourComponent _LittleTourComponent_0_5;
   _ViewLittleTourComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewLittleTourComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _LittleTourComponent_0_4 = new import1.LittleTourComponent();
-    _compView_0.create(_LittleTourComponent_0_4, projectableNodes);
+    _LittleTourComponent_0_5 = new import1.LittleTourComponent();
+    _compView_0.create(_LittleTourComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.LittleTourComponent>(0, this, rootEl, _LittleTourComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.LittleTourComponent) && (0 == nodeIndex))) {
-      return _LittleTourComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.LittleTourComponent>(0, this, rootEl, _LittleTourComponent_0_5);
   }
 
   @override

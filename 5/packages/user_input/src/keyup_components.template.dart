@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -65,24 +63,16 @@ const List<dynamic> styles$KeyUp1Component_untypedHost = const [];
 
 class _ViewKeyUp1Component_untypedHost0 extends AppView<dynamic> {
   ViewKeyUp1Component_untyped0 _compView_0;
-  import1.KeyUp1Component_untyped _KeyUp1Component_untyped_0_4;
+  import1.KeyUp1Component_untyped _KeyUp1Component_untyped_0_5;
   _ViewKeyUp1Component_untypedHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp1Component_untyped0(this, 0);
     rootEl = _compView_0.rootEl;
-    _KeyUp1Component_untyped_0_4 = new import1.KeyUp1Component_untyped();
-    _compView_0.create(_KeyUp1Component_untyped_0_4, projectableNodes);
+    _KeyUp1Component_untyped_0_5 = new import1.KeyUp1Component_untyped();
+    _compView_0.create(_KeyUp1Component_untyped_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.KeyUp1Component_untyped>(0, this, rootEl, _KeyUp1Component_untyped_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.KeyUp1Component_untyped) && (0 == nodeIndex))) {
-      return _KeyUp1Component_untyped_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.KeyUp1Component_untyped>(0, this, rootEl, _KeyUp1Component_untyped_0_5);
   }
 
   @override
@@ -146,24 +136,16 @@ const List<dynamic> styles$KeyUp1ComponentHost = const [];
 
 class _ViewKeyUp1ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp1Component0 _compView_0;
-  import1.KeyUp1Component _KeyUp1Component_0_4;
+  import1.KeyUp1Component _KeyUp1Component_0_5;
   _ViewKeyUp1ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp1Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _KeyUp1Component_0_4 = new import1.KeyUp1Component();
-    _compView_0.create(_KeyUp1Component_0_4, projectableNodes);
+    _KeyUp1Component_0_5 = new import1.KeyUp1Component();
+    _compView_0.create(_KeyUp1Component_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.KeyUp1Component>(0, this, rootEl, _KeyUp1Component_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.KeyUp1Component) && (0 == nodeIndex))) {
-      return _KeyUp1Component_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.KeyUp1Component>(0, this, rootEl, _KeyUp1Component_0_5);
   }
 
   @override
@@ -232,24 +214,16 @@ const List<dynamic> styles$KeyUp2ComponentHost = const [];
 
 class _ViewKeyUp2ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp2Component0 _compView_0;
-  import1.KeyUp2Component _KeyUp2Component_0_4;
+  import1.KeyUp2Component _KeyUp2Component_0_5;
   _ViewKeyUp2ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp2Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _KeyUp2Component_0_4 = new import1.KeyUp2Component();
-    _compView_0.create(_KeyUp2Component_0_4, projectableNodes);
+    _KeyUp2Component_0_5 = new import1.KeyUp2Component();
+    _compView_0.create(_KeyUp2Component_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.KeyUp2Component>(0, this, rootEl, _KeyUp2Component_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.KeyUp2Component) && (0 == nodeIndex))) {
-      return _KeyUp2Component_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.KeyUp2Component>(0, this, rootEl, _KeyUp2Component_0_5);
   }
 
   @override
@@ -318,24 +292,16 @@ const List<dynamic> styles$KeyUp3ComponentHost = const [];
 
 class _ViewKeyUp3ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp3Component0 _compView_0;
-  import1.KeyUp3Component _KeyUp3Component_0_4;
+  import1.KeyUp3Component _KeyUp3Component_0_5;
   _ViewKeyUp3ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp3Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _KeyUp3Component_0_4 = new import1.KeyUp3Component();
-    _compView_0.create(_KeyUp3Component_0_4, projectableNodes);
+    _KeyUp3Component_0_5 = new import1.KeyUp3Component();
+    _compView_0.create(_KeyUp3Component_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.KeyUp3Component>(0, this, rootEl, _KeyUp3Component_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.KeyUp3Component) && (0 == nodeIndex))) {
-      return _KeyUp3Component_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.KeyUp3Component>(0, this, rootEl, _KeyUp3Component_0_5);
   }
 
   @override
@@ -410,24 +376,16 @@ const List<dynamic> styles$KeyUp4ComponentHost = const [];
 
 class _ViewKeyUp4ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp4Component0 _compView_0;
-  import1.KeyUp4Component _KeyUp4Component_0_4;
+  import1.KeyUp4Component _KeyUp4Component_0_5;
   _ViewKeyUp4ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp4Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _KeyUp4Component_0_4 = new import1.KeyUp4Component();
-    _compView_0.create(_KeyUp4Component_0_4, projectableNodes);
+    _KeyUp4Component_0_5 = new import1.KeyUp4Component();
+    _compView_0.create(_KeyUp4Component_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.KeyUp4Component>(0, this, rootEl, _KeyUp4Component_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.KeyUp4Component) && (0 == nodeIndex))) {
-      return _KeyUp4Component_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.KeyUp4Component>(0, this, rootEl, _KeyUp4Component_0_5);
   }
 
   @override

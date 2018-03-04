@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -45,37 +43,37 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
   import2.Element _el_0;
   import2.Element _el_1;
   import3.ViewClickMeComponent0 _compView_1;
-  import4.ClickMeComponent _ClickMeComponent_1_4;
+  import4.ClickMeComponent _ClickMeComponent_1_5;
   import2.Element _el_2;
   import2.Element _el_3;
   import5.ViewClickMe2Component0 _compView_3;
-  import6.ClickMe2Component _ClickMe2Component_3_4;
+  import6.ClickMe2Component _ClickMe2Component_3_5;
   import2.Element _el_4;
   import2.Element _el_6;
   import7.ViewKeyUp1Component0 _compView_6;
-  import8.KeyUp1Component _KeyUp1Component_6_4;
+  import8.KeyUp1Component _KeyUp1Component_6_5;
   import2.Element _el_7;
   import2.Element _el_9;
   import9.ViewLoopBackComponent0 _compView_9;
-  import10.LoopBackComponent _LoopBackComponent_9_4;
+  import10.LoopBackComponent _LoopBackComponent_9_5;
   import2.Element _el_10;
   import2.Element _el_12;
   import7.ViewKeyUp2Component0 _compView_12;
-  import8.KeyUp2Component _KeyUp2Component_12_4;
+  import8.KeyUp2Component _KeyUp2Component_12_5;
   import2.Element _el_13;
   import2.Element _el_15;
   import7.ViewKeyUp3Component0 _compView_15;
-  import8.KeyUp3Component _KeyUp3Component_15_4;
+  import8.KeyUp3Component _KeyUp3Component_15_5;
   import2.Element _el_16;
   import2.Element _el_18;
   import7.ViewKeyUp4Component0 _compView_18;
-  import8.KeyUp4Component _KeyUp4Component_18_4;
+  import8.KeyUp4Component _KeyUp4Component_18_5;
   import2.Element _el_19;
   import2.Element _el_21;
   import2.Element _el_22;
   import2.Element _el_24;
   import11.ViewLittleTourComponent0 _compView_24;
-  import12.LittleTourComponent _LittleTourComponent_24_4;
+  import12.LittleTourComponent _LittleTourComponent_24_5;
   static RenderComponentType _renderType;
   ViewAppComponent0(AppView<dynamic> parentView, num parentIndex) : super(import14.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('my-app');
@@ -90,54 +88,54 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_1 = new import3.ViewClickMeComponent0(this, 1);
     _el_1 = _compView_1.rootEl;
     _el_0.append(_el_1);
-    _ClickMeComponent_1_4 = new import4.ClickMeComponent();
-    _compView_1.create(_ClickMeComponent_1_4, []);
+    _ClickMeComponent_1_5 = new import4.ClickMeComponent();
+    _compView_1.create(_ClickMeComponent_1_5, []);
     _el_2 = createAndAppend(doc, 'p', parentRenderNode);
     _compView_3 = new import5.ViewClickMe2Component0(this, 3);
     _el_3 = _compView_3.rootEl;
     _el_2.append(_el_3);
-    _ClickMe2Component_3_4 = new import6.ClickMe2Component();
-    _compView_3.create(_ClickMe2Component_3_4, []);
+    _ClickMe2Component_3_5 = new import6.ClickMe2Component();
+    _compView_3.create(_ClickMe2Component_3_5, []);
     _el_4 = createAndAppend(doc, 'h4', parentRenderNode);
     import2.Text _text_5 = new import2.Text('Give me some keys!');
     _el_4.append(_text_5);
     _compView_6 = new import7.ViewKeyUp1Component0(this, 6);
     _el_6 = _compView_6.rootEl;
     parentRenderNode.append(_el_6);
-    _KeyUp1Component_6_4 = new import8.KeyUp1Component();
-    _compView_6.create(_KeyUp1Component_6_4, []);
+    _KeyUp1Component_6_5 = new import8.KeyUp1Component();
+    _compView_6.create(_KeyUp1Component_6_5, []);
     _el_7 = createAndAppend(doc, 'h4', parentRenderNode);
     import2.Text _text_8 = new import2.Text('keyup loop-back component');
     _el_7.append(_text_8);
     _compView_9 = new import9.ViewLoopBackComponent0(this, 9);
     _el_9 = _compView_9.rootEl;
     parentRenderNode.append(_el_9);
-    _LoopBackComponent_9_4 = new import10.LoopBackComponent();
-    _compView_9.create(_LoopBackComponent_9_4, []);
+    _LoopBackComponent_9_5 = new import10.LoopBackComponent();
+    _compView_9.create(_LoopBackComponent_9_5, []);
     _el_10 = createAndAppend(doc, 'h4', parentRenderNode);
     import2.Text _text_11 = new import2.Text('Give me some more keys!');
     _el_10.append(_text_11);
     _compView_12 = new import7.ViewKeyUp2Component0(this, 12);
     _el_12 = _compView_12.rootEl;
     parentRenderNode.append(_el_12);
-    _KeyUp2Component_12_4 = new import8.KeyUp2Component();
-    _compView_12.create(_KeyUp2Component_12_4, []);
+    _KeyUp2Component_12_5 = new import8.KeyUp2Component();
+    _compView_12.create(_KeyUp2Component_12_5, []);
     _el_13 = createAndAppend(doc, 'h4', parentRenderNode);
     import2.Text _text_14 = new import2.Text('Type away! Press [Enter] when done.');
     _el_13.append(_text_14);
     _compView_15 = new import7.ViewKeyUp3Component0(this, 15);
     _el_15 = _compView_15.rootEl;
     parentRenderNode.append(_el_15);
-    _KeyUp3Component_15_4 = new import8.KeyUp3Component();
-    _compView_15.create(_KeyUp3Component_15_4, []);
+    _KeyUp3Component_15_5 = new import8.KeyUp3Component();
+    _compView_15.create(_KeyUp3Component_15_5, []);
     _el_16 = createAndAppend(doc, 'h4', parentRenderNode);
     import2.Text _text_17 = new import2.Text('Type away! Press [Enter] or click elsewhere when done.');
     _el_16.append(_text_17);
     _compView_18 = new import7.ViewKeyUp4Component0(this, 18);
     _el_18 = _compView_18.rootEl;
     parentRenderNode.append(_el_18);
-    _KeyUp4Component_18_4 = new import8.KeyUp4Component();
-    _compView_18.create(_KeyUp4Component_18_4, []);
+    _KeyUp4Component_18_5 = new import8.KeyUp4Component();
+    _compView_18.create(_KeyUp4Component_18_5, []);
     _el_19 = createAndAppend(doc, 'h4', parentRenderNode);
     import2.Text _text_20 = new import2.Text('Little Tour of Heroes');
     _el_19.append(_text_20);
@@ -148,39 +146,10 @@ class ViewAppComponent0 extends AppView<import1.AppComponent> {
     _compView_24 = new import11.ViewLittleTourComponent0(this, 24);
     _el_24 = _compView_24.rootEl;
     parentRenderNode.append(_el_24);
-    _LittleTourComponent_24_4 = new import12.LittleTourComponent();
-    _compView_24.create(_LittleTourComponent_24_4, []);
+    _LittleTourComponent_24_5 = new import12.LittleTourComponent();
+    _compView_24.create(_LittleTourComponent_24_5, []);
     init(const [], null);
     return null;
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import4.ClickMeComponent) && (1 == nodeIndex))) {
-      return _ClickMeComponent_1_4;
-    }
-    if ((identical(token, import6.ClickMe2Component) && (3 == nodeIndex))) {
-      return _ClickMe2Component_3_4;
-    }
-    if ((identical(token, import8.KeyUp1Component) && (6 == nodeIndex))) {
-      return _KeyUp1Component_6_4;
-    }
-    if ((identical(token, import10.LoopBackComponent) && (9 == nodeIndex))) {
-      return _LoopBackComponent_9_4;
-    }
-    if ((identical(token, import8.KeyUp2Component) && (12 == nodeIndex))) {
-      return _KeyUp2Component_12_4;
-    }
-    if ((identical(token, import8.KeyUp3Component) && (15 == nodeIndex))) {
-      return _KeyUp3Component_15_4;
-    }
-    if ((identical(token, import8.KeyUp4Component) && (18 == nodeIndex))) {
-      return _KeyUp4Component_18_4;
-    }
-    if ((identical(token, import12.LittleTourComponent) && (24 == nodeIndex))) {
-      return _LittleTourComponent_24_4;
-    }
-    return notFoundResult;
   }
 
   @override
@@ -216,24 +185,16 @@ const List<dynamic> styles$AppComponentHost = const [];
 
 class _ViewAppComponentHost0 extends AppView<dynamic> {
   ViewAppComponent0 _compView_0;
-  import1.AppComponent _AppComponent_0_4;
+  import1.AppComponent _AppComponent_0_5;
   _ViewAppComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import14.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewAppComponent0(this, 0);
     rootEl = _compView_0.rootEl;
-    _AppComponent_0_4 = new import1.AppComponent();
-    _compView_0.create(_AppComponent_0_4, projectableNodes);
+    _AppComponent_0_5 = new import1.AppComponent();
+    _compView_0.create(_AppComponent_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.AppComponent) && (0 == nodeIndex))) {
-      return _AppComponent_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.AppComponent>(0, this, rootEl, _AppComponent_0_5);
   }
 
   @override

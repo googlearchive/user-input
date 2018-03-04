@@ -1,7 +1,5 @@
-// GENERATED CODE - DO NOT MODIFY BY HAND
-
 // **************************************************************************
-// Generator: TemplateGenerator
+// Generator: Instance of 'Compiler'
 // **************************************************************************
 
 // ignore_for_file: cancel_subscriptions,constant_identifier_names,duplicate_import,non_constant_identifier_names,library_prefixes,UNUSED_IMPORT,UNUSED_SHOWN_NAME
@@ -64,24 +62,16 @@ const List<dynamic> styles$ClickMe2ComponentHost = const [];
 
 class _ViewClickMe2ComponentHost0 extends AppView<dynamic> {
   ViewClickMe2Component0 _compView_0;
-  import1.ClickMe2Component _ClickMe2Component_0_4;
+  import1.ClickMe2Component _ClickMe2Component_0_5;
   _ViewClickMe2ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewClickMe2Component0(this, 0);
     rootEl = _compView_0.rootEl;
-    _ClickMe2Component_0_4 = new import1.ClickMe2Component();
-    _compView_0.create(_ClickMe2Component_0_4, projectableNodes);
+    _ClickMe2Component_0_5 = new import1.ClickMe2Component();
+    _compView_0.create(_ClickMe2Component_0_5, projectableNodes);
     init0(rootEl);
-    return new ComponentRef<import1.ClickMe2Component>(0, this, rootEl, _ClickMe2Component_0_4);
-  }
-
-  @override
-  dynamic injectorGetInternal(dynamic token, int nodeIndex, dynamic notFoundResult) {
-    if ((identical(token, import1.ClickMe2Component) && (0 == nodeIndex))) {
-      return _ClickMe2Component_0_4;
-    }
-    return notFoundResult;
+    return new ComponentRef<import1.ClickMe2Component>(0, this, rootEl, _ClickMe2Component_0_5);
   }
 
   @override
