@@ -31,14 +31,15 @@ class ViewLittleTourComponent0 extends AppView<import1.LittleTourComponent> {
   import4.NgFor _NgFor_4_9;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewLittleTourComponent0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewLittleTourComponent0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('little-tour');
     _renderType ??= import8.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$LittleTourComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.LittleTourComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
     _el_1 = createAndAppend(doc, 'button', parentRenderNode);
@@ -91,7 +92,7 @@ class ViewLittleTourComponent0 extends AppView<import1.LittleTourComponent> {
   }
 }
 
-AppView<import1.LittleTourComponent> viewFactory_LittleTourComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.LittleTourComponent> viewFactory_LittleTourComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewLittleTourComponent0(parentView, parentIndex);
 }
 
@@ -99,7 +100,7 @@ class _ViewLittleTourComponent1 extends AppView<import1.LittleTourComponent> {
   import2.Element _el_0;
   import2.Text _text_1;
   var _expr_0;
-  _ViewLittleTourComponent1(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  _ViewLittleTourComponent1(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.EMBEDDED, {'\$implicit': null}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     componentType = ViewLittleTourComponent0._renderType;
   }
   @override
@@ -123,7 +124,7 @@ class _ViewLittleTourComponent1 extends AppView<import1.LittleTourComponent> {
   }
 }
 
-AppView<import1.LittleTourComponent> viewFactory_LittleTourComponent1(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.LittleTourComponent> viewFactory_LittleTourComponent1(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewLittleTourComponent1(parentView, parentIndex);
 }
 
@@ -132,7 +133,7 @@ const List<dynamic> styles$LittleTourComponentHost = const [];
 class _ViewLittleTourComponentHost0 extends AppView<dynamic> {
   ViewLittleTourComponent0 _compView_0;
   import1.LittleTourComponent _LittleTourComponent_0_5;
-  _ViewLittleTourComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewLittleTourComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import6.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewLittleTourComponent0(this, 0);
@@ -154,7 +155,7 @@ class _ViewLittleTourComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_LittleTourComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_LittleTourComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewLittleTourComponentHost0(parentView, parentIndex);
 }
 

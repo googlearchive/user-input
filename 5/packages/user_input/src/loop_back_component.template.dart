@@ -25,14 +25,15 @@ class ViewLoopBackComponent0 extends AppView<import1.LoopBackComponent> {
   import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewLoopBackComponent0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewLoopBackComponent0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('loop-back');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$LoopBackComponent);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.LoopBackComponent> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
     _el_1 = createAndAppend(doc, 'p', parentRenderNode);
@@ -58,7 +59,7 @@ class ViewLoopBackComponent0 extends AppView<import1.LoopBackComponent> {
   }
 }
 
-AppView<import1.LoopBackComponent> viewFactory_LoopBackComponent0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.LoopBackComponent> viewFactory_LoopBackComponent0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewLoopBackComponent0(parentView, parentIndex);
 }
 
@@ -67,7 +68,7 @@ const List<dynamic> styles$LoopBackComponentHost = const [];
 class _ViewLoopBackComponentHost0 extends AppView<dynamic> {
   ViewLoopBackComponent0 _compView_0;
   import1.LoopBackComponent _LoopBackComponent_0_5;
-  _ViewLoopBackComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewLoopBackComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewLoopBackComponent0(this, 0);
@@ -89,7 +90,7 @@ class _ViewLoopBackComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_LoopBackComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_LoopBackComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewLoopBackComponentHost0(parentView, parentIndex);
 }
 

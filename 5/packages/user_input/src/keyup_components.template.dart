@@ -26,14 +26,15 @@ class ViewKeyUp1Component_untyped0 extends AppView<import1.KeyUp1Component_untyp
   import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewKeyUp1Component_untyped0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewKeyUp1Component_untyped0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('key-up1-untyped');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$KeyUp1Component_untyped);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.KeyUp1Component_untyped> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
     _el_1 = createAndAppend(doc, 'p', parentRenderNode);
@@ -55,7 +56,7 @@ class ViewKeyUp1Component_untyped0 extends AppView<import1.KeyUp1Component_untyp
   }
 }
 
-AppView<import1.KeyUp1Component_untyped> viewFactory_KeyUp1Component_untyped0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.KeyUp1Component_untyped> viewFactory_KeyUp1Component_untyped0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewKeyUp1Component_untyped0(parentView, parentIndex);
 }
 
@@ -64,7 +65,7 @@ const List<dynamic> styles$KeyUp1Component_untypedHost = const [];
 class _ViewKeyUp1Component_untypedHost0 extends AppView<dynamic> {
   ViewKeyUp1Component_untyped0 _compView_0;
   import1.KeyUp1Component_untyped _KeyUp1Component_untyped_0_5;
-  _ViewKeyUp1Component_untypedHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewKeyUp1Component_untypedHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp1Component_untyped0(this, 0);
@@ -86,7 +87,7 @@ class _ViewKeyUp1Component_untypedHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_KeyUp1Component_untypedHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_KeyUp1Component_untypedHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewKeyUp1Component_untypedHost0(parentView, parentIndex);
 }
 
@@ -99,14 +100,15 @@ class ViewKeyUp1Component0 extends AppView<import1.KeyUp1Component> {
   import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewKeyUp1Component0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewKeyUp1Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('key-up1');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$KeyUp1Component);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.KeyUp1Component> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
     _el_1 = createAndAppend(doc, 'p', parentRenderNode);
@@ -128,7 +130,7 @@ class ViewKeyUp1Component0 extends AppView<import1.KeyUp1Component> {
   }
 }
 
-AppView<import1.KeyUp1Component> viewFactory_KeyUp1Component0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.KeyUp1Component> viewFactory_KeyUp1Component0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewKeyUp1Component0(parentView, parentIndex);
 }
 
@@ -137,7 +139,7 @@ const List<dynamic> styles$KeyUp1ComponentHost = const [];
 class _ViewKeyUp1ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp1Component0 _compView_0;
   import1.KeyUp1Component _KeyUp1Component_0_5;
-  _ViewKeyUp1ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewKeyUp1ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp1Component0(this, 0);
@@ -159,7 +161,7 @@ class _ViewKeyUp1ComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_KeyUp1ComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_KeyUp1ComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewKeyUp1ComponentHost0(parentView, parentIndex);
 }
 
@@ -172,14 +174,15 @@ class ViewKeyUp2Component0 extends AppView<import1.KeyUp2Component> {
   import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewKeyUp2Component0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewKeyUp2Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('key-up2');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$KeyUp2Component);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.KeyUp2Component> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
     _el_1 = createAndAppend(doc, 'p', parentRenderNode);
@@ -206,7 +209,7 @@ class ViewKeyUp2Component0 extends AppView<import1.KeyUp2Component> {
   }
 }
 
-AppView<import1.KeyUp2Component> viewFactory_KeyUp2Component0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.KeyUp2Component> viewFactory_KeyUp2Component0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewKeyUp2Component0(parentView, parentIndex);
 }
 
@@ -215,7 +218,7 @@ const List<dynamic> styles$KeyUp2ComponentHost = const [];
 class _ViewKeyUp2ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp2Component0 _compView_0;
   import1.KeyUp2Component _KeyUp2Component_0_5;
-  _ViewKeyUp2ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewKeyUp2ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp2Component0(this, 0);
@@ -237,7 +240,7 @@ class _ViewKeyUp2ComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_KeyUp2ComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_KeyUp2ComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewKeyUp2ComponentHost0(parentView, parentIndex);
 }
 
@@ -250,14 +253,15 @@ class ViewKeyUp3Component0 extends AppView<import1.KeyUp3Component> {
   import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewKeyUp3Component0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewKeyUp3Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('key-up3');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$KeyUp3Component);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.KeyUp3Component> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
     _el_1 = createAndAppend(doc, 'p', parentRenderNode);
@@ -284,7 +288,7 @@ class ViewKeyUp3Component0 extends AppView<import1.KeyUp3Component> {
   }
 }
 
-AppView<import1.KeyUp3Component> viewFactory_KeyUp3Component0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.KeyUp3Component> viewFactory_KeyUp3Component0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewKeyUp3Component0(parentView, parentIndex);
 }
 
@@ -293,7 +297,7 @@ const List<dynamic> styles$KeyUp3ComponentHost = const [];
 class _ViewKeyUp3ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp3Component0 _compView_0;
   import1.KeyUp3Component _KeyUp3Component_0_5;
-  _ViewKeyUp3ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewKeyUp3ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp3Component0(this, 0);
@@ -315,7 +319,7 @@ class _ViewKeyUp3ComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_KeyUp3ComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_KeyUp3ComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewKeyUp3ComponentHost0(parentView, parentIndex);
 }
 
@@ -328,14 +332,15 @@ class ViewKeyUp4Component0 extends AppView<import1.KeyUp4Component> {
   import2.Text _text_2;
   var _expr_0;
   static RenderComponentType _renderType;
-  ViewKeyUp4Component0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
+  ViewKeyUp4Component0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.COMPONENT, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways) {
     rootEl = import2.document.createElement('key-up4');
     _renderType ??= import6.appViewUtils.createRenderType('', ViewEncapsulation.None, styles$KeyUp4Component);
     setupComponentType(_renderType);
   }
   @override
   ComponentRef<import1.KeyUp4Component> build() {
-    final import2.HtmlElement parentRenderNode = initViewRoot(rootEl);
+    final _rootEl = rootEl;
+    final import2.HtmlElement parentRenderNode = initViewRoot(_rootEl);
     var doc = import2.document;
     _el_0 = createAndAppend(doc, 'input', parentRenderNode);
     _el_1 = createAndAppend(doc, 'p', parentRenderNode);
@@ -368,7 +373,7 @@ class ViewKeyUp4Component0 extends AppView<import1.KeyUp4Component> {
   }
 }
 
-AppView<import1.KeyUp4Component> viewFactory_KeyUp4Component0(AppView<dynamic> parentView, num parentIndex) {
+AppView<import1.KeyUp4Component> viewFactory_KeyUp4Component0(AppView<dynamic> parentView, int parentIndex) {
   return new ViewKeyUp4Component0(parentView, parentIndex);
 }
 
@@ -377,7 +382,7 @@ const List<dynamic> styles$KeyUp4ComponentHost = const [];
 class _ViewKeyUp4ComponentHost0 extends AppView<dynamic> {
   ViewKeyUp4Component0 _compView_0;
   import1.KeyUp4Component _KeyUp4Component_0_5;
-  _ViewKeyUp4ComponentHost0(AppView<dynamic> parentView, num parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
+  _ViewKeyUp4ComponentHost0(AppView<dynamic> parentView, int parentIndex) : super(import4.ViewType.HOST, {}, parentView, parentIndex, ChangeDetectionStrategy.CheckAlways);
   @override
   ComponentRef build() {
     _compView_0 = new ViewKeyUp4Component0(this, 0);
@@ -399,7 +404,7 @@ class _ViewKeyUp4ComponentHost0 extends AppView<dynamic> {
   }
 }
 
-AppView viewFactory_KeyUp4ComponentHost0(AppView<dynamic> parentView, num parentIndex) {
+AppView viewFactory_KeyUp4ComponentHost0(AppView<dynamic> parentView, int parentIndex) {
   return new _ViewKeyUp4ComponentHost0(parentView, parentIndex);
 }
 
