@@ -7,7 +7,6 @@ import 'package:build_config/build_config.dart';
 import 'package:collection/collection.dart';
 import 'package:meta/meta.dart';
 
-import '../builder/post_process_builder.dart';
 import 'input_matcher.dart';
 
 /// A "phase" in the build graph, which represents running a one or more
@@ -118,14 +117,15 @@ class InBuildPhase extends BuildPhase implements BuildAction {
     final settings = <String>[];
     if (isOptional) settings.add('optional');
     if (hideOutput) settings.add('hidden');
-    var result = '${builder.runtimeType} on $targetSources in $package';
+    var result = '$builderLabel on $targetSources in $package';
     if (settings.isNotEmpty) result += ' $settings';
     return result;
   }
 
   @override
   int get identity => _deepEquals.hash([
-        '${builder.runtimeType}',
+        builderLabel,
+        builder.buildExtensions,
         package,
         targetSources,
         generateFor,
@@ -151,7 +151,7 @@ class PostBuildPhase extends BuildPhase {
 
   @override
   String toString() =>
-      '${builderActions.map((a) => a.builder.runtimeType).join(', ')}';
+      '${builderActions.map((a) => a.builderLabel).join(', ')}';
 
   @override
   int get identity =>
@@ -191,7 +191,8 @@ class PostBuildAction implements BuildAction {
         generateFor = new InputMatcher(generateFor ?? const InputSet());
 
   int get identity => _deepEquals.hash([
-        builder.runtimeType.toString(),
+        builderLabel,
+        builder.inputExtensions.toList(),
         generateFor,
         package,
         targetSources,

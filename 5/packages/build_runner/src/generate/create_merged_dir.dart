@@ -3,11 +3,9 @@
 // BSD-style license that can be found in the LICENSE file.
 
 import 'dart:async';
-import 'dart:convert';
 import 'dart:io';
 
 import 'package:build/build.dart';
-import 'package:glob/glob.dart';
 import 'package:logging/logging.dart';
 import 'package:path/path.dart' as p;
 
@@ -35,6 +33,9 @@ Future<bool> createMergedOutputDirectories(
   for (var output in outputMap.keys) {
     if (!await _createMergedOutputDir(output, outputMap[output], assetGraph,
         packageGraph, reader, environment, buildPhases)) {
+      _logger.severe('Unable to create merged directory for $output.\n'
+          'Choose a different directory or delete the contents of that '
+          'directory.');
       return false;
     }
   }
@@ -109,9 +110,6 @@ Future<bool> _createMergedOutputDir(
       }
     }
 
-    outputAssets.addAll(
-        await _createMissingTestHtmlFiles(outputPath, packageGraph.root.name));
-
     var packagesFileContent = packageGraph.allPackages.keys
         .map((p) => '$p:packages/$p/')
         .join('\r\n');
@@ -131,7 +129,8 @@ Future<bool> _createMergedOutputDir(
   });
 
   logTimedSync(_logger, 'Writing asset manifest', () {
-    var content = outputAssets.map((id) => id.path).join(_manifestSeparator);
+    var paths = outputAssets.map((id) => id.path).toList()..sort();
+    var content = paths.join(_manifestSeparator);
     _writeAsString(
         outputDir, new AssetId(packageGraph.root.name, _manifestName), content);
   });
@@ -230,44 +229,6 @@ File _fileFor(Directory outputDir, AssetId id) {
   var file = new File(p.join(outputDir.path, relativePath));
   file.createSync(recursive: true);
   return file;
-}
-
-/// Creates html files for tests in [outputDir] that are missing them.
-///
-/// This only exists as a hack until we have something like
-/// https://github.com/dart-lang/build/issues/508.
-Future<List<AssetId>> _createMissingTestHtmlFiles(
-    String outputDir, String rootPackage) async {
-  if (!await new Directory(p.join(outputDir, 'test')).exists()) return [];
-
-  var dartBrowserTestSuffix = '_test.dart.browser_test.dart';
-  var htmlTestSuffix = '_test.html';
-  var dartFiles =
-      new Glob('test/**$dartBrowserTestSuffix').list(root: outputDir);
-  var outputAssets = <AssetId>[];
-  await for (var file in dartFiles) {
-    var dartPath = p.relative(file.path, from: outputDir);
-    var htmlPath =
-        dartPath.substring(0, dartPath.length - dartBrowserTestSuffix.length) +
-            htmlTestSuffix;
-    var htmlFile = new File(p.join(outputDir, htmlPath));
-    if (!await htmlFile.exists()) {
-      var originalDartPath = p.basename(
-          dartPath.substring(0, dartPath.length - '.browser_test.dart'.length));
-      await htmlFile.writeAsString('''
-<!DOCTYPE html>
-<html>
-<head>
-  <title>${htmlEscape.convert(htmlPath)} Test</title>
-  <link rel="x-dart-test"
-        href="${htmlEscape.convert(originalDartPath)}">
-  <script src="packages/test/dart.js"></script>
-</head>
-</html>''');
-      outputAssets.add(new AssetId(rootPackage, htmlPath));
-    }
-  }
-  return outputAssets;
 }
 
 /// Checks for a manifest file in [outputDir] and deletes all referenced files.
